@@ -28,6 +28,10 @@ Where the `Grip` GameObject has the `RotationGrip` script on it and it's transfo
 
 The names are up to you of course.
 
+# Restrictions
+
+There are plenty. But one that's quite noteworthy is the fact that the max rotation deviation will always use the original rotation as a base line, and allow you to rotate the object in any direction away from the original rotation, until it reaches the max deviation. There's currently no way around it this, not even using a different script to set the rotation at Start (i mean, maybe with even more hacks, but no, don't.), it would require a new feature in this script. However I'm not sure how exactly that should look for it to even be somewhat intuitive, and all in all this script is a mess and I don't enjoy working on it. There's a reason why there's still TODOs in the file.
+
 # Editor Tools
 
 The `RotationGrip` script comes with 2 (technically 3) utilities in the form of buttons in the inspector for the script.
