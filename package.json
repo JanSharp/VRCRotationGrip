@@ -1,0 +1,19 @@
+{
+  "name": "com.jansharp.rotation-grip",
+  "version": "1.1.1",
+  "description": "Rotate objects around an anchor point using VRC Pickups, synced.",
+  "displayName": "Rotation Grip",
+  "unity": "2019.4",
+  "author": {
+    "name": "JanSharp",
+    "email": "steinmeister36@gmail.com",
+    "url": "https://jansharp.github.io"
+  },
+  "license": "MIT",
+  "vpmDependencies": {
+    "com.jansharp.common": ">=0.1.0",
+    "com.vrchat.udonsharp": "^1.1.x"
+  },
+  "url": "https://github.com/JanSharp/VRCJanSharpCommon/releases/download/v1.1.1/com.jansharp.rotation-grip.zip",
+  "changelogUrl": "https://github.com/JanSharp/VRCJanSharpCommon/blob/v1.1.1/CHANGELOG.md"
+}
