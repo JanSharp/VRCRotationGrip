@@ -3,6 +3,10 @@
 
 Rotate objects around an anchor point using VRC Pickups, synced.
 
+# Installing
+
+Head to my [VCC Listing](https://jansharp.github.io/vrc/vcclisting.xhtml) and follow the instructions there.
+
 # One Time Setup
 
 Drag the `UpdateManager` prefab from the JanSharp Common package into your scene. It must keep that exact name and be at the root of the hierarchy.
