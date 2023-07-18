@@ -14,6 +14,6 @@
     "com.jansharp.common": ">=0.1.0",
     "com.vrchat.udonsharp": "^1.1.x"
   },
-  "url": "https://github.com/JanSharp/VRCJanSharpCommon/releases/download/v1.1.1/com.jansharp.rotation-grip.zip",
-  "changelogUrl": "https://github.com/JanSharp/VRCJanSharpCommon/blob/v1.1.1/CHANGELOG.md"
+  "url": "https://github.com/JanSharp/VRCRotationGrip/releases/download/v1.1.1/com.jansharp.rotation-grip.zip",
+  "changelogUrl": "https://github.com/JanSharp/VRCRotationGrip/blob/v1.1.1/CHANGELOG.md"
 }
