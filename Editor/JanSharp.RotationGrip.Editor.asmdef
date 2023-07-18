@@ -1,0 +1,19 @@
+{
+    "name": "JanSharp.RotationGrip.Editor",
+    "references": [
+        "JanSharp.RotationGrip",
+        "JanSharp.Common",
+        "JanSharp.Common.Editor",
+        "UdonSharp.Runtime",
+        "UdonSharp.Editor"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
