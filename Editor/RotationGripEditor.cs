@@ -32,7 +32,7 @@ namespace JanSharp
             rotationGripProxy.FindProperty(nameof(RotationGrip.updateManager)).objectReferenceValue = updateManager;
             rotationGripProxy.FindProperty(nameof(RotationGrip.initialLocalRotation)).quaternionValue = rotationGrip.toRotate.localRotation;
             rotationGripProxy.FindProperty(nameof(RotationGrip.maximumRotationDeviation)).floatValue = Mathf.Abs(rotationGrip.maximumRotationDeviation);
-            rotationGripProxy.FindProperty(nameof(RotationGrip.dummyTransform)).objectReferenceValue = rotationGrip.updateManager.transform;
+            rotationGripProxy.FindProperty(nameof(RotationGrip.dummyTransform)).objectReferenceValue = updateManager.transform;
             rotationGripProxy.FindProperty(nameof(RotationGrip.initialDistance)).floatValue = initialDistance;
             rotationGripProxy.ApplyModifiedProperties();
 
