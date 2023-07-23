@@ -1,6 +1,12 @@
 
 # Changelog
 
+## [1.1.2] - 2023-07-23
+
+### Fixed
+
+- Fix license to match the MIT "variant" used by Unity ([`3d198c0`](https://github.com/JanSharp/VRCRotationGrip/commit/3d198c024eef800298dd0a57270f4a08bba1e40c))
+
 ## [1.1.1] - 2023-07-18
 
 _First version of this package that is in the VCC listing._
@@ -46,6 +52,7 @@ _First version of this package that is in the VCC listing._
 <!-- RotationGrip_v1.1.0 -->
 <!-- RotationGrip_v1.0.0 -->
 
+[1.1.2]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.2
 [1.1.1]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.1
 [1.1.0]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/RotationGrip_v1.1.0
 [1.0.0]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/RotationGrip_v1.0.0
