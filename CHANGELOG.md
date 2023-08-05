@@ -1,6 +1,20 @@
 
 # Changelog
 
+## [1.1.3] - 2023-08-05
+
+### Changed
+
+- Change LICENSE.txt to LICENSE.md so Unity sees it in the package manager window ([`d5577b3`](https://github.com/JanSharp/VRCRotationGrip/commit/d5577b383fd8e92654e41d835df01072ec622976))
+
+### Added
+
+- Add vpm dependency on `com.vrchat.worlds` for clarity ([`c789398`](https://github.com/JanSharp/VRCRotationGrip/commit/c789398d362cf83121dbf891e9559b4b4ac08b88))
+
+### Fixed
+
+- Fix build error on publish ([`8e66a3b`](https://github.com/JanSharp/VRCRotationGrip/commit/8e66a3bb8f405896a94245f9ea89335dce5b7a06))
+
 ## [1.1.2] - 2023-07-23
 
 ### Fixed
@@ -52,6 +66,7 @@ _First version of this package that is in the VCC listing._
 <!-- RotationGrip_v1.1.0 -->
 <!-- RotationGrip_v1.0.0 -->
 
+[1.1.3]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.3
 [1.1.2]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.2
 [1.1.1]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.1
 [1.1.0]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/RotationGrip_v1.1.0
