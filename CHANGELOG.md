@@ -1,6 +1,16 @@
 
 # Changelog
 
+## [1.1.4] - 2023-10-12
+
+### Changed
+
+- Update vrc worlds dependency to 3.4.x ([`b0eb651`](https://github.com/JanSharp/VRCRotationGrip/commit/b0eb6518a57f9f51041e1d283b6c23399303eeec))
+
+### Removed
+
+- Remove udonsharp dependency as it has been merged into worlds ([`b0eb651`](https://github.com/JanSharp/VRCRotationGrip/commit/b0eb6518a57f9f51041e1d283b6c23399303eeec))
+
 ## [1.1.3] - 2023-08-05
 
 ### Changed
@@ -66,6 +76,7 @@ _First version of this package that is in the VCC listing._
 <!-- RotationGrip_v1.1.0 -->
 <!-- RotationGrip_v1.0.0 -->
 
+[1.1.4]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.4
 [1.1.3]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.3
 [1.1.2]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.2
 [1.1.1]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.1
