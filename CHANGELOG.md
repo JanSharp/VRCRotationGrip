@@ -1,6 +1,13 @@
 
 # Changelog
 
+## [1.1.5] - 2025-05-01
+
+### Changed
+
+- Use `SingletonReference` from `com.jansharp.common` package to automate `UpdateManager` instantiation ([`0d813e1`](https://github.com/JanSharp/VRCRotationGrip/commit/0d813e12649949cfce1ae45d8c9e59bb107bb1e7))
+- Update `com.jansharp.common` dependency to `v1.0.0` ([`8e77e90`](https://github.com/JanSharp/VRCRotationGrip/commit/8e77e901357c21a59947e0ea88a5e81775dcd149))
+
 ## [1.1.4] - 2023-10-12
 
 ### Changed
@@ -76,6 +83,7 @@ _First version of this package that is in the VCC listing._
 <!-- RotationGrip_v1.1.0 -->
 <!-- RotationGrip_v1.0.0 -->
 
+[1.1.5]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.5
 [1.1.4]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.4
 [1.1.3]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.3
 [1.1.2]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.2
