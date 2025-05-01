@@ -21,8 +21,7 @@ namespace JanSharp
         [Tooltip("When true the object To Rotate will only rotate around its up axis (the green arrow).")]
         public bool rotateAroundSingleAxis;
 
-        [HideInInspector] public UpdateManager updateManager;
-        [HideInInspector] public Transform dummyTransform;
+        [HideInInspector] [SingletonReference] public UpdateManager updateManager;
         [HideInInspector] public VRC_Pickup pickup;
         [HideInInspector] public Quaternion initialLocalRotation;
         [HideInInspector] public float initialDistance;
@@ -224,8 +223,9 @@ namespace JanSharp
                 Vector3 bonePosition = holdingPlayer.GetBonePosition(currentHandBone);
                 Quaternion boneRotation = holdingPlayer.GetBoneRotation(currentHandBone);
                 syncedRotation = Quaternion.Inverse(boneRotation) * this.transform.rotation;
-                dummyTransform.SetPositionAndRotation(bonePosition, boneRotation);
-                syncedPosition = dummyTransform.InverseTransformDirection(this.transform.position - bonePosition);
+                // Using updateManager.transform as a dummy transform.
+                updateManager.transform.SetPositionAndRotation(bonePosition, boneRotation);
+                syncedPosition = updateManager.transform.InverseTransformDirection(this.transform.position - bonePosition);
             }
             else
                 syncedRotation = toRotate.rotation;

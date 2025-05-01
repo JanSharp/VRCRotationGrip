@@ -7,10 +7,6 @@ Rotate objects around an anchor point using VRC Pickups, synced.
 
 Head to my [VCC Listing](https://jansharp.github.io/vrc/vcclisting.xhtml) and follow the instructions there.
 
-# One Time Setup
-
-Drag the `UpdateManager` prefab from the JanSharp Common package into your scene. It must keep that exact name and be at the root of the hierarchy.
-
 # Usage
 
 The way the `RotationGrip` script works is it rotates a given object whenever the object the `RotationGrip` is picked up (using a VRC Pickup script). The object `To Rotate` then gets rotated such that it perfectly faces _away from_ the held object.

@@ -16,23 +16,12 @@ namespace JanSharp
 
         private static bool OnBuild(RotationGrip rotationGrip)
         {
-            var updateManager = GameObject.Find("/UpdateManager")?.GetComponent<UpdateManager>();
-            if (updateManager == null)
-            {
-                Debug.LogError("RotationGrip requires a GameObject that must be at the root of the scene "
-                    + "with the exact name 'UpdateManager' which has the 'UpdateManager' UdonBehaviour.",
-                    rotationGrip);
-                return false;
-            }
-
             float initialDistance = rotationGrip.toRotate.InverseTransformDirection(rotationGrip.transform.position - rotationGrip.toRotate.position).magnitude;
 
             SerializedObject rotationGripProxy = new SerializedObject(rotationGrip);
             rotationGripProxy.FindProperty(nameof(RotationGrip.pickup)).objectReferenceValue = rotationGrip.GetComponent<VRC_Pickup>();
-            rotationGripProxy.FindProperty(nameof(RotationGrip.updateManager)).objectReferenceValue = updateManager;
             rotationGripProxy.FindProperty(nameof(RotationGrip.initialLocalRotation)).quaternionValue = rotationGrip.toRotate.localRotation;
             rotationGripProxy.FindProperty(nameof(RotationGrip.maximumRotationDeviation)).floatValue = Mathf.Abs(rotationGrip.maximumRotationDeviation);
-            rotationGripProxy.FindProperty(nameof(RotationGrip.dummyTransform)).objectReferenceValue = updateManager.transform;
             rotationGripProxy.FindProperty(nameof(RotationGrip.initialDistance)).floatValue = initialDistance;
             rotationGripProxy.ApplyModifiedProperties();
 
