@@ -12,7 +12,7 @@
   "license": "MIT",
   "vpmDependencies": {
     "com.vrchat.worlds": "^3.4.x",
-    "com.jansharp.common": ">=0.1.0"
+    "com.jansharp.common": ">=1.0.0"
   },
   "url": "https://github.com/JanSharp/VRCRotationGrip/releases/download/v1.1.5/com.jansharp.rotation-grip.zip",
   "changelogUrl": "https://github.com/JanSharp/VRCRotationGrip/blob/v1.1.5/CHANGELOG.md"
