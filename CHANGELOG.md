@@ -1,6 +1,13 @@
 
 # Changelog
 
+## [1.1.6] - 2026-08-23
+
+### Changed
+
+- Update `com.jansharp.common` dependency to 1.4.0 ([`620eb5a`](https://github.com/JanSharp/VRCRotationGrip/commit/620eb5afb7349af79cba879b13d41580c1a1a5fd))
+- Update unity version to `2022.3` ([`87e485f`](https://github.com/JanSharp/VRCRotationGrip/commit/87e485f0b3d746ea7fc8532a0ac6dfe03569860c))
+
 ## [1.1.5] - 2025-05-01
 
 ### Changed
@@ -83,6 +90,7 @@ _First version of this package that is in the VCC listing._
 <!-- RotationGrip_v1.1.0 -->
 <!-- RotationGrip_v1.0.0 -->
 
+[1.1.6]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.6
 [1.1.5]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.5
 [1.1.4]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.4
 [1.1.3]: https://github.com/JanSharp/VRCRotationGrip/releases/tag/v1.1.3
