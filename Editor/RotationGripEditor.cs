@@ -1,18 +1,16 @@
-﻿using UdonSharp;
-using UnityEngine;
-using VRC.SDKBase;
-using VRC.Udon;
-using VRC.SDK3.Components;
-using UnityEditor;
+﻿using System.Linq;
 using UdonSharpEditor;
-using System.Linq;
+using UnityEditor;
+using UnityEngine;
+using VRC.SDK3.Components;
+using VRC.SDKBase;
 
 namespace JanSharp
 {
-    [InitializeOnLoad]
     public static class RotationGripOnBuild
     {
-        static RotationGripOnBuild() => JanSharp.OnBuildUtil.RegisterType<RotationGrip>(OnBuild);
+        [OrderedInitializeOnLoad]
+        private static void OnAssemblyLoad() => JanSharp.OnBuildUtil.RegisterType<RotationGrip>(OnBuild);
 
         private static bool OnBuild(RotationGrip rotationGrip)
         {
@@ -76,13 +74,15 @@ namespace JanSharp
                         pickup: rotationGrip.GetComponent<VRCPickup>(),
                         rigidbody: rotationGrip.GetComponent<Rigidbody>()
                     ))
-                    .Where(data => {
+                    .Where(data =>
+                    {
                         return data.pickup.ExactGrip != null
                             || data.pickup.orientation != VRC_Pickup.PickupOrientation.Grip
                             || data.rigidbody.useGravity
                             || !data.rigidbody.isKinematic;
                     }),
-                allData => {
+                allData =>
+                {
                     SerializedObject rigidbodiesProxy = new SerializedObject(allData.Select(d => d.rigidbody).ToArray());
                     rigidbodiesProxy.FindProperty("m_UseGravity").boolValue = false;
                     rigidbodiesProxy.FindProperty("m_IsKinematic").boolValue = true;
